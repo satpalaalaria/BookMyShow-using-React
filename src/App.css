@@ -1,0 +1,129 @@
+.input_placeholder{
+  color: #000000 !important;
+}
+.search_icon{
+  color: #000000 !important;
+  opacity: 50% !important;
+
+}
+
+.menuicon-three-line {
+  color: white;
+  opacity: 100%;
+}
+.secound-navbar {
+  height: 2.5rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 1rem;
+}
+
+.movie-name-link {
+  color: #ffffff;
+  font-weight: bold;
+  width: auto;
+  margin-left: 1.2rem;
+}
+
+element.style {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.main-header-appbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999;
+}
+.header_toolbar{
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+/*--------------------------------------------------------------*/
+.movie-result{
+  display: grid ;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+  background: #000 !important;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  /* flex-wrap: nowrap !important;
+  transform: 'translateZ(0)' !important; */
+}
+h1{
+  color: #000;
+  text-align: center;
+}
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 200px;
+  margin-top: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px 0 rgb(252, 252, 252);
+}
+b{
+  color: white;
+}
+/**-------------------------------------------------------------------*/
+@media (max-width: 966px) {
+  .hide_box{
+    display: none !important;
+  }
+  .movie-result{
+    grid-template-columns: auto auto auto auto !important;
+  }
+  
+}
+
+@media (max-width: 830px) {
+  .hide_box{
+    display: none !important;
+  }
+  .sign_hide{
+    display: none !important;
+  } 
+  .movie-result{
+    grid-template-columns: auto auto auto !important;
+  }
+}
+@media (max-width: 745px) {
+  .hide_box{
+    display: none !important;
+  }
+  .sign_hide{
+    display: none !important;
+  }
+  .search_barhide{
+    /* display: none !important; */
+    width: 45% !important;
+  
+  } 
+  .input_placeholder{
+    width: 90% !important;
+  }
+  .footer_peragraph{
+    display: none;
+  }
+  .movie-result{
+    grid-template-columns: auto auto auto !important;
+  }
+}
+
+@media (max-width: 630px){
+  .movie-result{
+    grid-template-columns: auto auto !important;
+  }
+}
+@media (max-width: 420px){
+  .movie-result{
+    grid-template-columns: auto !important;
+  }
+}
